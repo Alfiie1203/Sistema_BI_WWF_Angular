@@ -1,0 +1,8 @@
+{
+    "/assets/*":{
+        "target": "https://kf.kobotoolbox.org/",
+        "secure": true,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    }
+}
