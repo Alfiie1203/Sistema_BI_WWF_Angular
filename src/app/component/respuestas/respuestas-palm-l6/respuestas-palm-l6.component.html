@@ -1,0 +1,549 @@
+<div class="contenedor" id="htmlData">
+    <form [formGroup]="createRegister">
+        <img src="../assets/palma6.png" height=100% width=100% alt="">
+        
+
+        <div class="row">
+            <div class="col-1">
+            </div>
+            <div class="col-10">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"><h1>Personaliza tu hoja de ruta:</h1></th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <div class="row">
+                                <div class="col 6">
+                                    <h3>POLITICA Y COMPROMISO</h3>
+                                </div>
+                                <div class="col 6">
+                                    <div class="content-select">
+                                        <select formControlName="pyc" name="">
+                                            <option value="A">A</option>
+                                            <option value="B">B</option>
+                                            <option value="C">C</option>
+                                        </select>
+                                        <i></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                                ¿Qué se espera de la Compañía?<br> La Compañía debe tener una política integral o un conjunto de políticas que cubran los aspectos sociales y ambientales de la producción y el abastecimiento de la metria prima procesada en sus operaciones. Para el caso especifico de esta herramienta, una política  de No deforestación. La política o políticas deben ser adoptadas y firmadas por la alta dirección. <br><br>                                            ¿Qué debe incluir la política? <br>
+                                Alcance: La política debe aplicarse a nivel de grupo de empresas (siempre y cuando la política se aplique y se esté implementando a nivel de entidad). Debe cubrir toda la cadena de suministro de la(s) materia(s) prima(s) procesada(s) de la empresa, incluidos todos los proveedores directos e indirectos, y todos los orígenes de abastecimiento, operaciones propias y empresas conjuntas (si corresponde).<br>
+                                Si los compromisos no se aplican a todo el negocio relacionado con estos productos básicos, entonces los compromisos especifican claramente los productos, las operaciones y las transacciones financieras que se incluyen y que se excluyen del alcance. El alcance definido se justifica a través de un análisis fiable de riesgo que demuestre que las porciones excluidas no están sujetas a riesgos de deforestacion.<br><br>
+                                Contenido:<br> La politica debe mencionar las medidas adecuadas a emprender para apoyar la protección de largo plazo de los bosques naturales y sus valores para la conservación en las areas (de donde haya provenido la materia prima, sea por areas propias o a traves de intermediarios) relacionadas a las operaciones de la empresa , y procurar su restauración y/o compensación en los casos en los que la empresa haya causado o contribuido directa o indirectamente a la deforestacion. La política también debe incluir un compromiso para garantizar que las operaciones y la cadena de suministro de la empresa cumplan con todas las leyes aplicables.  También se espera que las empresas incluyan una fecha de corte relacionada con sus compromisos de no deforestación, la fecha después de la cual la deforestación hace que un área determinada o unidad de producción no cumpla con los compromisos de no deforestación. Como ejemplo, una empresa que adopta diciembre de 2015 se comprometería a no obtener ninguna materia prima producida en tierras deforestadas o convertidas después de diciembre de 2015, a menos que los proveedores se comprometan a remediar, restaurar o compensar áreas que se han perdido.<br>
+                                Es importante que la política incluya definiciones de los términos clave que se utilizan. Donde existan, deben alinearse con las definiciones aceptadas en la industria (por ejemplo en palma, de los documentos RSPO), de lo contrario, el Marco de Responsabilidad (AFi) podría usarse para definiciones transversales.<br>
+                                Revisión periódica de la política: Se recomienda que la Compañía realice una revisión periódica de sus políticas y las actualicen en consecuencia para garantizar la alineación con los estándares de la industria (por ejemplo, AFi, UNGP, CDP, CGF, RSPO) y los problemas de sostenibilidad emergentes.
+                            
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <table class="table-secondary mb-0" id="select1">
+                                    <tr *ngIf="createRegister.value.pyc == 'A'">
+                                        <td colspan="2">
+                                            La Compañía aún no cuenta con un compromiso en No Deforestación, por lo tanto, el primer paso es plasmar en una política corporativa este compromiso teniendo en cuenta los siguientes aspectos: <br><br>
+1. Especificar el resultado esperado con la no deforestación. Por ejemplo:  'eliminar la deforestación' , 'alcanzar la no deforestación en su cadena de suministro de carne' o 'producir y/o abastecerse de productos que no contibuyen a la deforestación'. <br>
+2.  Incluir definiciones de la compañía para deforestación y otros terminos relevantes con el compromiso<br>
+3.  Establecer cual va a ser la fecha de corte para deforestación y objetivos claros para medir el cumplimiento del compromiso.  Por ejemplo, en los Acuerdos Cero Deforestación la fecha de corte establecida  para la cadena de suministro de carne es el 1 de enero de 2011; y su meta para alcanzar este compromiso es al 2030. Sin embargo, actualmente existen diferentes fechas de corte establecidas según el sector, geografías, certifiaciones u objetivos a alcanzar. Se recomienda tomar la fecha de corte mas estricta, según aplique a la cadena de suministro de carne. <br>
+4. El alcance en el que es aplicable su compromiso y política<br>
+5. Incluir su compromiso en tomar las medidas necesarias para asegurar la protección de bosques naturales asociados a las áreas de producción de la cadena de suministro de carne, así como apoyar en la restauración y/o compensación en las áreas donde se haya infrigido este compromiso dentro de su cadena de suinistro. <br><br>
+
+Además, si la Compañía tiene operaciones en diferentes mercados, debe traducir la política al idioma de cada mercado donde será aplicable.
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="createRegister.value.pyc == 'B'">
+                                        <td colspan="2">
+                                            La Compañía ya cuenta con una política corporativa en donde declara su compromio a la No Deforestación. Sin embargo, se recomienda asegurar que:<br><br>
+
+                                            1. Se hace explícito el alcance al que será aplicable el compromiso. Idealmente, el compromiso debe aplicarse ampliamente en toda la Compañía para abordar todos los riesgos relacionados con la deforestación de la cadena de suministro de carne, incluyendo todos los origenes de abastecimiento,  producidos en las propias operaciones de la empresa así como de sus proveedores directos e inderectos. <br>
+                                            
+                                            Sin embargo, si no incluye todas las operaciones de la Compañía, el alcance definido debe justificarse mediante un análisis de riesgo creíble que demuestre que las partes excluidas no están sujetas a riesgos de deforestación.<br>
+                                            
+                                            2.  Existe claridad en las fechas de corte y fecha objetivo para alcanzar el compromiso.  La fecha de corte establecida en los Acuerdos Cero Deforestación en Colombia para la cadena de suministro de  carne es el 1 de enero de 2011; esto nos indica que si ha existido tala de bosques posterior a esta fecha se ha infringido con el compromiso de no deforestación. Sin embargo, actualmente existen diferentes fechas de corte establecidas según el sector, geografías, certifiaciones u objetivos a alcanzar. Se recomienda tomar la fecha de corte mas estricta, según aplique a la cadena de suministro de carne. <br>
+                                            
+                                            3. Se han definido  objetivos con plazos determinados para cumplir con el compromiso.  En los Acurdos Cero Deforestación en Colombia el plazo determinado para cumplir con el compromiso es al año 2030.  <br>
+                                            
+                                            3. Se actualiza la política periodicamente (al menos una vez al año) para asegurar su alineamiento con los estándares de la industria y leyes aplicables.<br>
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="createRegister.value.pyc == 'C'">
+                                        <td colspan="2">
+                                            La Compañía ya cuenta con una política corporativa robusta en donde declara su compromiso a la No Deforestación. Se recomienda que la política sea revisada periodicamente (al menos una vez al año) para asegurar su alineamiento con los estándares de la industria y leyes aplicables.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <div class="row">
+                                <div class="col 6">
+                                    <h3>ENTENDER LA BASE DE ABASTECIMIENTO</h3>
+                                </div>
+                                <div class="col 6">
+                                    <div class="content-select">
+                                        <select formControlName="eba" name="">
+                                            <option value="A">A</option>
+                                            <option value="B">B</option>
+                                            <option value="C">C</option>
+                                        </select>
+                                        <i></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </tr>
+                        <tr>
+                            <td>
+                                Trazabilidad
+La trazabilidad es la capacidad de seguir un producto o su componente a través de las etapas de la cadena de suministro (por ejemplo, producción, procesamiento, fabricación y distribución).
+<br><br>
+                                ¿Qué se espera de la empresa? <br>
+La empresa debe tener una comprensión clara de su cadena de suministro de aceite de palma y de dónde provienen sus volúmenes de productos basicos. Esto les permite medir su responsabilidad y apalancamiento y saber cómo y dónde priorizar y tomar medidas para lograr resultados positivos en sus bases de suministro, por ejemplo, a través del involucramiento con proveedores, el monitoreo y la respuesta a la deforestación o iniciativas de paisaje. En resumen, la trazabilidad es un medio para un fin y, por lo tanto, las empresas deben tener suficiente trazabilidad para permitirles tomar medidas efectivas.<br><br>
+
+¿Cómo puede una empresa lograr la trazabilidad? <br>
+Las empresas deben definir una estrategia de trazabilidad que describa: 
+Propósito de la recopilación de datos: ¿Por qué se recopilan datos y qué se va a hacer con ellos? Ejemplos de usos de los datos de trazabilidad: Informes públicos sobre los compromisos de la empresa sobre transparencia; comprender y gestionar los riesgos de la cadena de suministro; monitorear la deforestación; gestión de quejas
+Tipo de datos recopilados: ¿Qué datos se recopilarán y en qué nivel de la cadena de suministro?  
+o Trazabilidad a planta extractora (TTM)
+o Trazabilidad a produccion/plantacion (TTP)
+Es más probable que las empresas al inicio de la cadena de suministro ( planta extractora, planta palmistera) recopilen datos de trazabilidad a produccion/plantacion detallados, mientras que las empresas al final de la cadena solo reportarán un porcentaje de volumen de trazabilidad a produccion/plantacion agregado.<br><br>
+
+Establecer objetivos<br>
+Las empresas deben establecer objetivos para lalcanzar trazabilidad a extractora (TTM) Yy regiones de producción (TTP).  Para alcanzar trazabilidad a regiones de produccion  las empresas aún luchan por establecer objetivos realistas debido a la complejidad de la cadena de suministro, la dificultad de rastrear hasta la unidad de producción. El mejor enfoque es comparar los objetivos y las definiciones establecidas por los clientes, proveedores y competidores de la empresa para brindar recomendaciones.<br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <table class="table-secondary mb-0" id="select2">
+                                    <tr *ngIf="createRegister.value.eba == 'A'">
+                                        <td colspan="2">
+                                            La definición del nivel de trazabilidad es el primer paso para desarrollar una estrategia de trazabilidad. <br><br>
+
+El primer paso para esto, es comprender las brechas tanto en los procesos de compra de la Compañía como en la información de los proveedores directos. Sí aun no se recopila la ubicación de los proveedores,  las acciones específicas recomendadas para aumentar el nivel de trazabilidad con respecto a los proveedores directos incluyen:<br><br>
+
+1) Requerir en la política de la Compañía, clausulas contractuales  y comunicaciones formales con los proveedores en donde se les siolicite compartir su ubicación geográfica <br>
+2) Establecer sistemas internos para consolidar y registrar la información requerida a los proveedores directos:<br>
+1) Volumen comprado a cada proveedor <br>
+2) Porcentaje (%) que cada proveedor representa en las compras.<br>
+3) Nivel de trazabilidad alcanzado a la fecha<br><br>
+
+ Una vez es claro el nivel de trazabilidd a alcanzar, es indispensable que se categoricen los volúmenes comprados trazables como “conocidos” y los volúmenes no trazables como “desconocidos” para empezar a priorizar los riesgos con la información recolectada a la fecha y comprender que acciones se deben emprender para recolectar la información que aun hace falta. 
+<br><br>
+Todos los volumenes categorizados como "Desconocidos" son considerados de alto riesgo, ya que no se cuenta con información minima para demostrar su cumplimiento con el compromiso de No Deforestación.    
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="createRegister.value.eba == 'B'">
+                                        <td colspan="2">
+                                            La trazabilidad completa hasta los orígenes del suministro no siempre es necesaria para demostrar adecuadamente el cumplimiento o gestionar el incumplimiento. Sin embargo, la información completa sobre el polígono de fincas de origen de los intermediarios (por ejemplo, productores que originaron soja comprada por intermediarios) proporciona una comprensión más rigurosa del riesgo de suministro de la Compañía.<br>
+
+la Compañía puede implementar una o más de las siguientes acciones para aumentar la trazabilidad de la cadena de suministro:<br>
+
+1) Rastrear el aceite de palma hasta la finca de origen (p. ej., productores que originaron el aceite de palma).<br>
+2) Rastrear los materiales hasta un intermediario ( (p. ej., otros comerciantes, propietarios de silos, cooperativas, etc.) que cuente con mecanismos de control efectivos para garantizar que se rastrea a sus proveedores hasta la finca o el origen y que pueda proporcionar evidencia suficiente de esto a la Compañía.<br>
+3) Utilizar sistemas de aseguramiento creíbles (p. ej., sistemas de certificación creíbles) capaces de demostrar que el desempeño con respecto a los problemas sociales o ambientales específicos es adecuado para cumplir con los compromisos de la Compañía<br>
+4) Rastrear el aceite de palma a jurisdicciones o paisajes donde se ha demostrado que el desempeño con respecto a temas sociales o ambientales específicos es adecuado para cumplir con los compromisos de la Compañía sobre los temas correspondientes.<br><br>
+
+Las acciones específicas recomendadas para aumentar el nivel de trazabilidad de la Compañía con respecto a la finca de origen d incluyen:<br><br>
+
+1) Requerir en la política de la Compañía,  clausulas contractuales  y comunicaciones formales con los proveedores donde se les solicite proporcionar el polígono o ubicación de fincas de los productores que originaron la palma de aceite<br>
+2) Ampliar los proyectos de trazabilidad a más proveedores, ya sea directos o indirectos, para mapear el polígono de fincas de los productores que originaron la soja que la Compañía les compró.<br>
+3) Desarrollar un programa piloto para ayudar a los proveedores, ya sean directos o intermediarios, a identificar el polígono de fincas de los productores<br>
+4) Participar en iniciativas colaborativas que desarrollen soluciones para la trazabilidad de las fincas de origen 
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="createRegister.value.eba == 'C'">
+                                        <td colspan="2">
+                                            La Compañía cuenta con la trazabilidad necesaria para comprender cabalmente el riesgo de suministro de la empresa. Ahora la Compañía necesita usar la información para asegurarse de que no está comprando a proveedores que están contribuyendo a la deforestación y la conversión de los proveedores tienen operaciones.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Evaluación de riesgos y priorización <br>
+                                Una evaluación de riesgos es un proceso sistemático de evaluación del riesgo potencial en las operaciones, cadenas de suministro e inversiones actuales o futuras de una empresa, en particular el riesgo de incumplimiento de los compromisos de la empresa o de las leyes y reglamentaciones aplicables.<br>
+                                
+                                Con la información de trazabilidad recopilada, las evaluaciones de riesgos ambientales y sociales/de derechos humanos ayudan a identificar y mitigar los impactos negativos reales y potenciales de la producción de palma aceitera en la base de suministro. Las empresas deben considerar la evaluación de riesgos ambientales y sociales/de derechos humanos como un primer paso , pero a largo plazo debe apuntar a la transición hacia el monitoreo, que reemplaza la evaluación de riesgos.
+                                <br><br>
+                                ¿Qué se espera de las empresas?<br>
+                                Las empresas deben comprender bien los riesgos ambientales y sociales relacionados con la producción de palma aceitera en su base de suministro. Esto les permite priorizar la acción y el compromiso con los proveedores y las partes interesadas vinculadas a paisajes, jurisdicciones o proveedores de mayor riesgo. Se recomienda a las empresas que tengan una evaluación de riesgos ambientales y sociales que cubra toda la base de suministro y se realice con la regularidad necesaria, por ejemplo, siempre que se produzca un cambio significativo en la base de suministro o una adquisición<br><br>
+                                
+                                ¿Cómo realizar una evaluación de riesgos?<br>
+                                Generalmente se realizan las evaluaciones de riesgos ambientales a nivel de planta extractora o paisaje a través de una plataforma de Sistemas de Información Geografica disponible, como el uso de Global Forest Watch Pro o análisis personalizados. A menos que los datos de TTP ya estén disponibles, se utilizan datos remotos e indirectos para dar una indicación inicial de qué plantas extractoras u orígenes tienen el mayor riesgo o incidencia de deforestación, uso de incendios o conversión de turba. No se trata de evaluar el desempeño real de los proveedores, pero es útil para priorizar la participación y el seguimiento posteriores de los proveedores. Por ejemplo, como parte del compromiso del proveedor, se les puede pedir a las plantas extractoras en áreas con alto riesgo de deforestación que realicen evaluaciones de AVC-HCSA o priorizar los datos de TTP para hacer una transición rápida al monitoreo de la deforestación. Las empresas deben considerar la evaluación ambiental como un primer paso, pero en el futuro a largo plazo debe apuntar a la transición hacia el monitoreo, que reemplaza la evaluación de riesgos
+                                 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <table class="table-secondary mb-0" id="select3">
+                                    <tr *ngIf="createRegister.value.eba == 'A'">
+                                        <td colspan="2">
+                                            La Compañía debe realizar una evaluación de riesgos en toda su base de suministro a medida que se implementan los sistemas de gestión relacionados con los compromisos de la Compañía. Además, se deben realizar evaluaciones de riesgos cuando se establezcan nuevas operaciones o se consideren nuevos proveedores o orígenes de abastecimiento.<br>
+
+En cuanto a los enfoques de evaluación de riesgos, la Iniciativa del marco de rendición de cuentas recomienda lo siguiente:<br><br>
+
+1) Cuando ya existan evaluaciones de riesgo actuales y creíbles para los contextos y temas en cuestión (p. ej., para un producto, región/bioma específico, etc.), se alienta a la Compañía a usarlas o hacer referencia a ellas;<br>
+2) Cuando la información de riesgo para un área de suministro determinada no esté disponible, se alienta a las empresas que se abastecen de la misma jurisdicción a trabajar juntas antes de la competencia o en conjunto con grupos industriales u otros colectivos para desarrollar y compartir información de riesgo y los datos en los que se basan. establecido;<br>
+3) Cuando se deban realizar nuevas evaluaciones de riesgos, estas pueden basarse en fuentes de datos preexistentes, así como en la recopilación de nuevos datos.
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="createRegister.value.eba == 'B'">
+                                        <td colspan="2">
+                                            La Compañía debe realizar una evaluación de riesgos en toda su base de suministro a medida que se implementan los sistemas de gestión relacionados con los compromisos de la Compañía. Además, se deben realizar evaluaciones de riesgos cuando se establezcan nuevas operaciones o se consideren nuevos proveedores o orígenes de abastecimiento.<br>
+
+En cuanto a los enfoques de evaluación de riesgos, la Iniciativa del marco de rendición de cuentas recomienda lo siguiente:<br><br>
+
+1) Cuando ya existan evaluaciones de riesgo actuales y creíbles para los contextos y temas en cuestión (p. ej., para un producto, región/bioma específico, etc.), se alienta a la Compañía a usarlas o hacer referencia a ellas;<br>
+2) Cuando la información de riesgo para un área de suministro determinada no esté disponible, se alienta a las empresas que se abastecen de la misma jurisdicción a trabajar juntas antes de la competencia o en conjunto con grupos industriales u otros colectivos para desarrollar y compartir información de riesgo y los datos en los que se basan. establecido;<br>
+3) Cuando se deban realizar nuevas evaluaciones de riesgos, estas pueden basarse en fuentes de datos preexistentes, así como en la recopilación de nuevos datos.
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="createRegister.value.eba == 'C'">
+                                        <td colspan="2">
+                                            La Compañía debe realizar una evaluación de riesgos en toda su base de suministro a medida que se implementan los sistemas de gestión relacionados con los compromisos de la Compañía. Además, se deben realizar evaluaciones de riesgos cuando se establezcan nuevas operaciones o se consideren nuevos proveedores o orígenes de abastecimiento.<br>
+
+En cuanto a los enfoques de evaluación de riesgos, la Iniciativa del marco de rendición de cuentas recomienda lo siguiente:<br><br>
+
+1) Cuando ya existan evaluaciones de riesgo actuales y creíbles para los contextos y temas en cuestión (p. ej., para un producto, región/bioma específico, etc.), se alienta a la Compañía a usarlas o hacer referencia a ellas;<br>
+2) Cuando la información de riesgo para un área de suministro determinada no esté disponible, se alienta a las empresas que se abastecen de la misma jurisdicción a trabajar juntas antes de la competencia o en conjunto con grupos industriales u otros colectivos para desarrollar y compartir información de riesgo y los datos en los que se basan. establecido;<br>
+3) Cuando se deban realizar nuevas evaluaciones de riesgos, estas pueden basarse en fuentes de datos preexistentes, así como en la recopilación de nuevos datos.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <div class="row">
+                                <div class="col 6">
+                                    <h3>PLANIFICAR INTERVENCIONES</h3>
+                                </div>
+                                <div class="col 6">
+                                    <div class="content-select">
+                                        <select formControlName="pi" name="">
+                                            <option value="A">A</option>
+                                            <option value="B">B</option>
+                                            <option value="C">C</option>
+                                        </select>
+                                        <i></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </tr>
+                        <tr>
+                            <td>
+                                ¿Qué es un plan de implementación con límite de tiempo? <br>
+Un plan de implementación con límite de tiempo (también llamado plan de acción o hoja de ruta) es una documentación de las actividades, inversiones, procesos, procedimientos y metodologías que una empresa pretende implementar a nivel de base de suministro para lograr y demostrar cumplimiento de los compromisos y obligaciones ambientales y sociales. <br>
+
+Debe basarse en los hallazgos del mapeo de trazabilidad y las evaluaciones de riesgos realizadas en los pasos anteriores, y establecer las acciones clave que una empresa tomará durante un período de tiempo determinado para garantizar que el aceite de palma del que se estan abasteciendo o produciendo cumple al 100 % con los requisitos y compromisos asumidos en su(s) política(s).  Contar con este plan es importante para que una empresa: <br><br>
+
+1. Tenga una comprensión clara de lo que debe hacer para cumplir con los compromisos que ha asumido. <br>
+2. Mostrar a los compradores y otras partes interesadas que la empresa se toma en serio la entrega de aceite de palma sostenible y proporcionar una estimado de cuándo lo lograrán.<br><br>
+
+¿Qué se espera de las empresas? <br>
+Todas las empresas deben tener un plan integral para cumplir con su(s) póliza(s), que abarque toda su cadena de suministro (incluidas las operaciones propias y las empresas conjuntas, los proveedores directos e indirectos y todas las áreas de abastecimiento). El plan debe establecer objetivos, actividades, cronogramas y KPI, incluida una descripción que describa el enfoque de abastecimiento responsable de la empresa. Un plan en el sector del aceite de palma suele variar de 3 a 10 años.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <table class="table-secondary mb-0" id="select3">
+                                    <tr *ngIf="createRegister.value.pi == 'A'">
+                                        <td colspan="2">
+                                            El plan de implementación con límite de tiempo debe incluir acciones tanto dentro como fuera de la cadena de suministro para abordar y mitigar los impactos negativos de la producción de aceite de palma y generar resultados positivos. Las acciones deben priorizarse en función del nivel de riesgo identificado a través de las evaluaciones iniciales de la base de suministro.<br><br>
+
+Acciones dentro de la cadena de suministro –relacionadas con los volúmenes comprados directamente por la empresa y el desempeño de sus proveedores. Las acciones pueden incluir lo siguiente:<br>
+- Comprar aceite de palma sostenible certificado, como aceite de palma certificado por la RSPO.
+- Desarrollar un sistema de diligencia debida y criterios de selección. para la selección e incorporación de nuevos proveedores. <br>
+-Evaluar el desempeño de los proveedores directos y el riesgo al que están exponiendo a la empresa, por ejemplo, ¿el proveedor tiene una política? ¿Están trabajando en la sostenibilidad? ¿Se abastecen en áreas con un alto riesgo de deforestación o abusos a los derechos humanos?¿Tienen sus propios sistemas de monitoreo de proveedores o DD?<br>
+-Desarrollo de un proceso para la participación y el seguimiento de los proveedores, que describe el alcance y los problemas que la empresa quiere abordar, y los criterios claros que los proveedores deben cumplir. <br>
+Apoyar a los proveedores y proporcionar incentivos para la mejora a través del desarrollo de capacidades, compartir responsabilidades y actividades de cofinanciamiento, incluido el trabajo con pequeños agricultores. <br>
+-Desarrollar mecanismos para capturar y monitorear todos los incumplimientos de la política y los abusos de los derechos humanos en la cadena de suministro y tener procesos para abordarlos; esto generalmente se hace a través de un mecanismo de quejas. <br>
+-Desarrollar sistemas de seguimiento y presentación de informes para medir el progreso.
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="createRegister.value.pi == 'B'">
+                                        <td colspan="2">
+                                            Acciones más allá de la cadena de suministro: relacionadas con los lugares donde se produce el aceite de palma y problemas sistémicos dentro del sector. Las acciones pueden incluir: <br><br>
+-Participar en debates globales e iniciativas de múltiples partes interesadas a través de la membresía y la participación activa en grupos de trabajo de, p. RSPO, grupos consultivos sobre legislación relacionada o desarrollo de directrices<br>
+-Comprometerse y/o apoyar iniciativas y proyectos que aborden problemas de sostenibilidad (p. ej., deforestación, detener el trabajo infantil, mejorar los derechos sobre la tierra) en los paisajes, jurisdicciones y áreas donde se origina el abastecimiento de aceite de palma de la Compañía. <br>
+- Participar en iniciativas sectoriales en el setor del aceite de palma para desafiar los problemas sistémicos vinculados a la producción de aceite de palma, como la deforestación; esto implica colaborar con Compañías pares, esquemas de certificación y proveedores (por ejemplo, a través del Grupo de Colaboración de Aceite de Palma).
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="createRegister.value.pi == 'C'">
+                                        <td colspan="2">
+                                            Acciones más allá de la cadena de suministro: relacionadas con los lugares donde se produce el aceite de palma y problemas sistémicos dentro del sector. Las acciones pueden incluir: <br><br>
+
+-Participar en debates globales e iniciativas de múltiples partes interesadas a través de la membresía y la participación activa en grupos de trabajo de, p. RSPO, grupos consultivos sobre legislación relacionada o desarrollo de directrices<br>
+-Comprometerse y/o apoyar iniciativas y proyectos que aborden problemas de sostenibilidad (p. ej., deforestación, detener el trabajo infantil, mejorar los derechos sobre la tierra) en los paisajes, jurisdicciones y áreas donde se origina el abastecimiento de aceite de palma de la Compañía. <br>
+- Participar en iniciativas sectoriales en el setor del aceite de palma para desafiar los problemas sistémicos vinculados a la producción de aceite de palma, como la deforestación; esto implica colaborar con Compañías pares, esquemas de certificación y proveedores (por ejemplo, a través del Grupo de Colaboración de Aceite de Palma).
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            
+
+                            <td>
+                                <div class="row">
+                                    <div class="col 6">
+                                        <h3>MONITOREO Y REPORTE</h3>
+                                    </div>
+                                    <div class="col 6">
+                                        <div class="content-select">
+                                            <select formControlName="mr" name="">
+                                                <option value="A">A</option>
+                                                <option value="B">B</option>
+                                                <option value="C">C</option>
+                                            </select>
+                                            <i></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Monitoreo <br>
+El monitoreo y la revisión del progreso de las Compañías es fundamental para garantizar que las acciones sean efectivas e impulsen resultados positivos. Esto pasa por la implementación de un sistema efectivo de medición y evaluación que incluya KPIs de proceso e impacto. Entonces se necesitan mecanismos efectivos para monitorear el progreso que se está logrando contra los planes de acción y los KPI para que los responsables de la entrega entiendan qué progreso se está logrando e identifiquen y reaccionen ante los problemas. <br><br>
+
+
+Monitoreo Geoespacial<br>
+Cada vez más Compañías están adoptando sistemas de monitoreo geoespacial de la deforestación como Starling, Satelligence, EarthEqualizer o sistemas internos para monitorear los cambios en el uso de la tierra en su cadena de suministro a través de imágenes satelitales o de radar. La Compañía debe verificar las alertas recibidas a través del sistema para confirmar si se produjo el evento de deforestación. Esto se puede hacer poniéndose en contacto con los proveedores y solicitando evidencias de apoyo o visitas sobre el terreno. Cuando se confirme, la Compañía debe tomar medidas para abordar este incumplimiento dentro de su cadena de suministro (consulte la sección sobre el mecanismo de quejas).<br><br>
+
+Reportes<br>
+Reportar de forma regular y pública sobre el progreso realizado por la Compañía para abordar los problemas ambientales y sociales aumenta la confianza de las partes externas. Esto les permite comprender el progreso y los desafíos que enfrenta la Compañía en su viaje hacia un resultado positivo. Los reportes pueden tomar varias formas, como informes anuales, sitios web y paneles públicos. Independientemente de los medios que elija la Compañía, es importante que la Compañía desarrolle una narrativa sobre la acción realizada y utilice métricas SMART (específicas, medibles, alcanzables, relevantes y limitadas en el tiempo) para informar sobre el progreso realizado.
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <table class="table-secondary mb-0" id="select4">
+                                    <tr *ngIf="createRegister.value.mr == 'A'">
+                                        <td colspan="2">
+                                            La Compañía debe de asegurarse de incluir a toda su base de suministro dentro del monitoreo.
+<br><br>
+1) Seguimiento directo a la base de suministro<br>
+2) Seguimiento de áreas o jurisdicciones de abastecimiento.<br><br>
+
+1) Seguimiento directo a la base de suministro<br>
+La Compañía puede monitorear directamente a su base de suministro al sobreponer la información de registro y ubicación con listas y bases de datos públicas. Los pasos para lograr el monitoreo directo en incluyen:<br><br>
+a) Exigir a los proveedores que proporcionen su polígono de finca  y otros documentos formales.
+<br>b) Asegurar que la Compañía cuente con sistemas y procedimientos internos para consolidar el polígono de fincas
+<br>c) Usar una herramienta ya existente o una organización de terceros para automatizar la verificación cruzada del polígono de finca con listas públicas
+<br>d) Con respecto a las “compras al contado”, la Compañía debe, como mínimo, requerir el polígono de finca de los proveedores  para realizar una verificación cruzada con las bases de datos públicas para compras futuras.<br><br>
+
+2) Seguimiento de áreas o jurisdicciones de abastecimiento.<br>
+No debe utilizarse un enfoque jurisdiccional cuando los orígenes del suministro pueden determinarse y monitorearse con mayor precisión. Sin embargo, para algunas Compañías, puede que no sea posible. En este caso, el monitoreo puede ocurrir a la escala del área geográfica más pequeña posible dentro de la cual se encuentra su base de suministro.<br>
+El monitoreo de las áreas de abastecimiento se realiza utilizando varios enfoques, herramientas y análisis para evaluar los cambios en el uso de la tierra/cobertura terrestre en un área de abastecimiento. Si el monitoreo a nivel de área muestra un bajo riesgo de incumplimiento dentro de toda el área, la Compañía puede suponer que todos los proveedores dentro del área presentan un bajo riesgo de incumplimiento y, por lo general, no es necesario un monitoreo a mayor escala. Sin embargo, si se determina que el área de abastecimiento tiene algunos incumplimientos, la Compañía puede optar por adoptar un "enfoque conservador" y asumir que los incumplimientos están relacionados con la cadena de suministro de la Compañía. Para abordar este problema, la Compañía debe considerar una mayor trazabilidad para permitir el monitoreo directo de su base de suministro como se describe en el enfoque (1).
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="createRegister.value.mr == 'B'">
+                                        <td colspan="2">
+                                            Idealmente, la Compañía debe establecer un sistema que monitoree cada compra contra los requisitos de conversión y deforestación de la Compañía. El monitoreo puede comenzar con los proveedores directos (por ejemplo, con quien se ha firmado un acuerdo comercial) e intermediarios (por ejemplo, los proveedores de mis proveedores directos) más relevantes (en términos de volumen) o más críticos (en términos de riesgo).<br><br>
+
+La Compañía puede comenzar a monitorear un grupo piloto de proveedores para mejorar su entendimiento de su base de suministro y eventualmente expandir el monitoreo como una práctica estándar por parte de la operación de compras de la Compañía para todos los proveedores de palma de aceite. <br><br>
+
+Informar externamente sobre las iniciativas y el progreso de la Compañía en la lucha contra la deforestación y la conversión es esencial para generar confianza con las partes interesadas. La comunicación puede comenzar internamente para promover la alineación en toda la organización y para que la Compañía aprenda la mejor manera de informar sobre el progreso externamente.
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="createRegister.value.mr == 'C'">
+                                        <td colspan="2">
+                                            Cuando se comunica externamente, la empresa debe proporcionar información completa y estructurada para permitir que las partes interesadas entiendan y contribuyan a los esfuerzos de la Compañía sobre la deforestación. Una publicación externa específica sobre deforestación y esfuerzos de conversión puede resaltar los logros, compromisos y actividades de la Compañía. 
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="row">
+                                    <div class="col 6"><h3>MECANISMO DE QUEJAS Y RECLAMOS</h3></div>
+                                    <div class="col 6">
+                                        <div class="content-select">
+                                        <select formControlName="mqr" name="">
+                                            <option value="A">A</option>
+                                            <option value="B">B</option>
+                                            <option value="C">C</option>
+                                        </select>
+                                        <i></i>
+                                    </div>
+                                </div>
+                                </div>
+                                
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ¿Qué se espera de las Compañías? <br>
+Todas las Compañías deben contar con un sistema eficaz para atender las quejas planteadas en su cadena de suministro e reportar de manera transparente sobre los avances logrados. Debe aplicarse a toda la cadena de suministro y cubrir todas los temas planteadas en la(s) política(s) de la Compañía, tanto sociales como medioambientales. Se espera que las Compañías trabajen en conjunto con sus pares hacia un mecanismo de quejas compartido y común para responder de la manera más efectiva a las quejas identificadas y monitorear la efectividad de las acciones tomadas. <br> <br>
+
+El propósito del mecanismo de quejas es: <br>
+1) recibir y abordar cualquier inquietud, queja, notificación de conflictos emergentes o quejas que aleguen daño real o potencial a las personas afectadas que surja de las operaciones de la Compañía; <br>
+2) ayudar en la resolución de quejas entre la Compañía y las partes interesadas en el contexto de las operaciones de la Compañía; y <br>
+3) operar en todo momento de manera flexible, colaborativa y transparente orientada a la resolución de problemas y la construcción de consensos <br> <br>
+
+Las quejas pueden estar relacionadas con cualquier daño potencial o real a personas, grupos o el medio ambiente.
+Estos incluyen, entre otros, el incumplimiento de los compromisos de la Compañía, la ley aplicable, u otras obligaciones de la Compañía.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <table class="table-secondary mb-0" id="select5">
+                                    <tr *ngIf="createRegister.value.mqr == 'A'">
+                                        <td colspan="2">
+                                            Para permitir que las quejas se aborden pronto y se resuelvan directamente, todas las Compañías deben establecer un mecanismo de quejas efectivo que sea de fácil acceso para las personas agraviadas y comunidades que pueden verse afectadas negativamente por sus operaciones. Los mecanismos de quejas pueden ser importantes sistemas de alerta temprana para las Compañías y pueden proporcionar información crítica para procesos más amplios de diligencia debida tanto en materia ambiental y social.<br><br>
+
+La Compañía debe contar con un sistema de quejas y reclamos accesible a sus trabajadores y cualquier parte interesada en donde puedan registar una queja. En el proiceso de desarrollar un mecanismo de quejas se recomienda realizar estas preguntas clave:<br><br>
+✓ ¿Cuál es el papel del mecanismo de quejas en la Compañía?<br>
+✓ ¿Cómo complementa el mecanismo de quejas los procedimientos de quejas existentes (operativos,judiciales y extrajudiciales)?<br>
+✓ ¿Cuáles son las funciones/responsabilidades de departamentos/empleados específicos?<br>
+✓ ¿A qué niveles se debe aplicar el mecanismo de quejas (sede de la Compañía y/o ubicaciones en el extranjero)?<br>
+✓ ¿Qué grupos de partes interesadas deben tener acceso al mecanismo de quejas (empleados en la Compañía, empleados de proveedores y clientes, residentes locales, etc.)?<br>
+✓ ¿Qué canales utiliza para ofrecer procedimientos de quejas?
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="createRegister.value.mqr == 'B'">
+                                        <td colspan="2">
+                                            Para la correcta gestion del mecanismo de quejas y reclamos, debe existir una guía interna para el personal en la que se detalla cómo tratar eficazmente las quejas y reclamaciones. Se recomienda incluir las siguientes caracteristicas:<br><br>
+1.  Proveer un acceso sencillo para quienes deseen elevar una queja y reclamo, por ejemplo, línea telefonica(s) disponibles, página web, formulario, oficinas de atención presencial.<br>
+2. Hacer público el mecanismo y los medios que aseguran  su funcionamiento.<br>
+3. Permitir a sus usuarios plantear sus inquietudes de manera segura y confidencial, en igualdad de condiciones sin discriminación, miedo o represalias; esto puede incluir el establecimiento de procedimientos especiales para recibir quejas de forma anónima.<br>
+4. Supervisar cómo se manejan las quejas, brindar orientación y  explicar claramente quién es el responsable interno de tratar las quejas <br>
+5.  Garantizar confidencialidad sobre el contenido de la queja o reclamo y la identidad de quien la eleva, en los casos que se requiera.<br>
+6. Involucrar a los interesados durante todas las etapas del proceso.<br>
+7. Acordar y monitorear indicadores claves de funcionamiento<br>
+8. Se ha definido los plazos en el que se deben responder todas las quejas registradas y asegúrese de que sea cumplido el plazo.<br>
+9. Existen pasos claros para clasificar una queja como registrada, en progreso/seguimiento, y resuelta
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="createRegister.value.mqr == 'C'">
+                                        <td colspan="2">
+                                            La Compañía ya cuenta con un mecanismo de quejas y se encuentra estableciondo acciones para la resoulución de estas. Para continuar con la correcta gestión del mecanismo de quejas se recomienda asegurar que: <br><br>
+
+✓ Se ha informado a todas las partes interesadas de la existencia del mecanismo de quejas<br>
+✓ Se ha descrito el prodecimiento de quejas de forma clara y comprensible para todas las partes interesadas<br>
+✓ Se ha garantizado el anonimato / confidencialidad de la queja<br>
+✓ Los diversos canales de quejas (intermediario neutral externo, plataforma en línea anónima, etc, líneas telefonicas, atención presencial) promueven la confianza de los grupos de partes interesadas en el procedimiento de quejas<br>
+✓ Las partes interesadas tienen suficiente conocimiento para utilizar el mecanismo de quejas.<br>
+✓ Divulga el proceso del procedimiento de queja (incluidos los pasos individuales,
+responsabilidades y empleados implicados, plazos, etc.)<br>
+✓  Se informa periódicamente sobre las quejas recibidas y cómo se tratan (temas, estado, etc.)?<br>
+✓  Se proporciona información transparente sobre el curso del procedimiento de queja  responsabilidades<br>
+✓ Se esta comprobando la eficacia del mecanismo de quejas<br>
+✓ El procedimiento de queja incluye el desarrollo de soluciones y medidas correctivas en línea con las necesidades de los afectados
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-1">
+            </div>
+        </div>
+
+
+        <div class="col-md-12 text-center">
+            <div class="row">
+                <div class="col-1">
+
+                </div>
+
+                <div class="col-10">
+                    <div class="list-group"
+                        *ngIf="createRegister.value.pyc == '' || createRegister.value.eba == '' || createRegister.value.pi == '' || createRegister.value.mr == '' || createRegister.value.mqr == ''">
+                        <a data-bs-toggle="modal" data-bs-target="#exampleModal1"
+                            class="list-group-item list-group-item-action list-group-item-success">
+                            <div>
+                                <H4>
+                                    Completa todos los campos para poder descargar como PDF
+                                </H4>
+                                <h5>
+                                    Si no sabes que hacer <b>Clic aquí</b>
+                                </h5>
+                            </div>
+
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel1">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body col-md-12 text-center">
+                                <iframe width=100% height="315" src="https://www.youtube.com/"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-1">
+
+                </div>
+            </div>
+
+            <div
+                *ngIf="createRegister.value.pyc != '' && createRegister.value.eba != '' && createRegister.value.pi != '' && createRegister.value.mr != '' && createRegister.value.mqr != ''">
+                <!-- <button type="button" (click)="downloadPDF()" class="btn btn-success">Descargar como PDF</button> -->
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" (click)="downloadPDF()"
+                    data-bs-target="#exampleModal">
+                    Descargar como PDF
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="alert alert-success" role="alert">
+                                Esta acción puede tomar varios segundos!
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div> <br><br>
+
+
+            <img src="../assets/footerPDF.png" height=60% width=60% alt="">
+
+
+
+        </div>
+
+
+    </form>
+
+
+</div>
+<app-menu></app-menu>

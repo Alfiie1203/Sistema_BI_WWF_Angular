@@ -1,0 +1,684 @@
+<div class="contenedor" id="htmlData">
+    <form [formGroup]="createRegister">
+        <img src="../assets/CompromisoEmpresarialCIRSABig.jpg" height=100% width=100% alt="">
+
+
+        <div class="row">
+            <div class="col-1">
+            </div>
+            <div class="col-10">
+                <table class="table" *ngFor="let cal of informacion">
+                    <thead>
+                        <tr>
+                            <th scope="col">Personaliza tu hoja de ruta</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>POLITICA Y COMPROMISO</td>
+                            <!-- <td>
+                                <div class="content-select" *ngFor="let cal of informacion">
+                                    <select formControlName="pyc" name="">
+                                        <option value={{cal.calculation_pc}} selected>{{cal.calculation_pc}}</option>
+                                    </select>
+                                    <i></i>
+                                </div>
+                            </td> -->
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <table class="table-secondary mb-0" id="select1">
+                                    <tr *ngIf="cal.calculation_pc == 'A'">
+                                        <td colspan="2">
+                                            La Compañía aún no cuenta con un compromiso en <b>No Deforestación</b>, por
+                                            lo tanto, el
+                                            primer paso es plasmar en una política corporativa este compromiso teniendo
+                                            en
+                                            cuenta los siguientes aspectos:<br><br>
+                                            <b>1.</b> Especificar el resultado esperado con la no deforestación. Por
+                                            ejemplo: 'eliminar
+                                            la deforestación' , 'alcanzar la no deforestación en su cadena de suministro
+                                            de
+                                            carne' o 'producir y/o abastecerse de productos que no contibuyen a la
+                                            deforestación'<br><br>
+                                            <b>2.</b> Incluir definiciones de la compañía para deforestación y otros
+                                            terminos
+                                            relevantes con el compromiso<br><br>
+                                            <b>3.</b> Establecer cual va a ser la fecha de corte para deforestación y
+                                            objetivos claros
+                                            para medir el cumplimiento del compromiso. Por ejemplo, en los Acuerdos Cero
+                                            Deforestación la fecha de corte establecida para la cadena de suministro de
+                                            carne es
+                                            el 1 de enero de 2011; y su meta para alcanzar este compromiso es al 2030.
+                                            Sin
+                                            embargo, actualmente existen diferentes fechas de corte establecidas según
+                                            el
+                                            sector, geografías, certifiaciones u objetivos a alcanzar. Se recomienda
+                                            tomar la
+                                            fecha de corte mas estricta, según aplique a la cadena de suministro de
+                                            carne.<br><br>
+                                            <b>4.</b> El alcance en el que es aplicable su compromiso y política<br><br>
+                                            <b>5.</b> Incluir su compromiso en tomar las medidas necesarias para
+                                            asegurar la protección
+                                            de bosques naturales asociados a las áreas de producción de la cadena de
+                                            suministro
+                                            de carne, así como apoyar en la restauración y/o compensación en las áreas
+                                            donde se
+                                            haya infrigido este compromiso dentro de su cadena de suinistro.<br><br>
+
+                                            Además, si la Compañía tiene operaciones en diferentes mercados, debe
+                                            traducir la
+                                            política al idioma de cada mercado donde será aplicable.
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="cal.calculation_pc == 'B'">
+                                        <td colspan="2">
+                                            La Compañía ya cuenta con una política corporativa en donde declara su
+                                            compromio a
+                                            la <b>No Deforestación</b>. Sin embargo, se recomienda asegurar que:
+                                            <br><br>
+
+                                            <b>1.</b> Se hace explícito el alcance al que será aplicable el compromiso.
+                                            Idealmente, el
+                                            compromiso debe aplicarse ampliamente en toda la Compañía para abordar todos
+                                            los
+                                            riesgos relacionados con la deforestación de la cadena de suministro de
+                                            carne,
+                                            incluyendo todos los origenes de abastecimiento, producidos en las propias
+                                            operaciones de la empresa así como de sus proveedores directos e inderectos.
+                                            <br>
+
+                                            Sin embargo, si no incluye todas las operaciones de la Compañía, el alcance
+                                            definido
+                                            debe justificarse mediante un análisis de riesgo creíble que demuestre que
+                                            las
+                                            partes excluidas no están sujetas a riesgos de deforestación. <br><br>
+
+                                            <b>2.</b> Existe claridad en las fechas de corte y fecha objetivo para
+                                            alcanzar el
+                                            compromiso. La fecha de corte establecida en los Acuerdos Cero Deforestación
+                                            en
+                                            Colombia para la cadena de suministro de carne es el 1 de enero de 2011;
+                                            esto nos
+                                            indica que si ha existido tala de bosques posterior a esta fecha se ha
+                                            infringido
+                                            con el compromiso de no deforestación. Sin embargo, actualmente existen
+                                            diferentes
+                                            fechas de corte establecidas según el sector, geografías, certifiaciones u
+                                            objetivos
+                                            a alcanzar. Se recomienda tomar la fecha de corte mas estricta, según
+                                            aplique a la
+                                            cadena de suministro de carne. <br><br>
+
+                                            <b>3.</b> Se han definido objetivos con plazos determinados para cumplir con
+                                            el compromiso.
+                                            En los Acurdos Cero Deforestación en Colombia el plazo determinado para
+                                            cumplir con
+                                            el compromiso es al año 2030. <br><br>
+
+                                            <b>4.</b> Se actualiza la política periodicamente (al menos una vez al año)
+                                            para asegurar
+                                            su alineamiento con los estándares de la industria y leyes aplicables.
+                                            <br><br>
+
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="cal.calculation_pc == 'C'">
+                                        <td colspan="2">
+                                            La Compañía ya cuenta con una política corporativa robusta en donde declara
+                                            su
+                                            compromiso a la <b>No Deforestación</b>. Se recomienda que la política
+                                            sea revisada
+                                            periodicamente (al menos una vez al año) para asegurar su alineamiento con
+                                            los
+                                            estándares de la industria y leyes aplicables.
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ENTENDER LA BASE DE ABASTECIMIENTO</td>
+                            <!--<td>
+                                <div class="content-select">
+                                    <select formControlName="eba" name="">
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                    </select>
+                                    <i></i>
+                                </div>
+                                
+                            </td>-->
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <table class="table-secondary mb-0" id="select2">
+                                    <tr *ngIf="cal.calculation_eb == 'A'">
+                                        <td colspan="2">
+                                            La definición del nivel de trazabilidad es el primer paso para desarrollar
+                                            una
+                                            estrategia de trazabilidad. <br><br>
+
+                                            Es imperativo que las empresas tengan un nivel adecuado de trazabilidad para
+                                            asegurar que sus compromisos correspondan con esfuerzos de asignación de
+                                            recursos
+                                            viables; y, lograr la granularidad necesaria para tomar medidas. <br><br>
+
+                                            El primer paso para esto, es comprender las brechas tanto en los procesos de
+                                            compra
+                                            de la Compañía como en la información de los proveedores directos. Sí aun no
+                                            se
+                                            recopila la ubicación de los proveedores, las acciones específicas
+                                            recomendadas para
+                                            aumentar el nivel de trazabilidad con respecto a los proveedores directos
+                                            incluyen: <br><br>
+
+                                            <b>1)</b> Requerir en la política de la Compañía, clausulas contractuales y
+                                            comunicaciones
+                                            formales con los proveedores compartir su ubicación geográfica<br>
+                                            <b>2)</b> Establecer sistemas internos para consolidar y registrar la
+                                            información requerida
+                                            a los proveedores directos:<br>
+                                            <b>&emsp;1)</b> Volumen comprado a cada proveedor<br>
+                                            <b>&emsp;2)</b> Porcentaje (%) que cada proveedor representa en las
+                                            compras.<br>
+                                            <b>&emsp;3)</b> Nivel de trazabilidad alcanzado a la fecha <br><br>
+
+                                            Una vez es claro el nivel de trazabilidd a alcanzar, es indispensable que se
+                                            categoricen los volúmenes comprados trazables como “conocidos” y los
+                                            volúmenes no
+                                            trazables como “desconocidos” para empezar a priorizar los riesgos con la
+                                            información recolectada a la fecha y comprender que acciones se deben
+                                            emprender para
+                                            recolectar la información aun hace falta. <br><br>
+
+                                            Todos los volumenes categorizados como ""Desconocidos"" son considerados de
+                                            alto
+                                            riesgo, ya que no se cuenta con información minima para demostrar su
+                                            cumplimiento
+                                            con el compromiso de No Deforestación.
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="cal.calculation_eb == 'B'">
+                                        <td colspan="2">
+                                            Conocer los lugares en campo (a nivel de finca) de donde viene la materia
+                                            prima) es
+                                            importante para determinar el riesgo de la materia prima. Sin embargo, la
+                                            trazabilidad completa hasta nivelde de finca no siempre es necesaria para
+                                            demostrar
+                                            adecuadamente el cumplimiento o gestionar el incumplimiento. <br><br>
+
+                                            La Compañía puede implementar una o más de las siguientes acciones para
+                                            aumentar la
+                                            trazabilidad de la cadena de suministro:<br><br>
+
+                                            <b>1)</b> Rastrear la materia prima hasta los proveedores indirectos (p.
+                                            ej., fincas
+                                            finales, intermedias y de nacimiento).<br>
+                                            <b>2)</b> Rastrear la materia prima hasta un proveedor directo (p. ej.,
+                                            empacadores de
+                                            carne) que cuenta con mecanismos de control efectivos para garantizar que
+                                            sus
+                                            proveedores sean rastreados hasta las fincas finales, intermedias y de
+                                            origen y que
+                                            pueda proporcionar evidencia suficiente de esto a la Compañía.<br>
+                                            <b>3)</b> Utilizar sistemas de garantía creíbles (p. ej., sistemas de
+                                            certificación
+                                            creíbles) capaces de vincular a los proveedores de carne con fincas,
+                                            intermedias y
+                                            de origen que tengan atributos específicos de cumplimiento o desempeño.<br>
+                                            <b>4)</b> Rastrear la carne a jurisdicciones o paisajes donde se ha
+                                            demostrado que el
+                                            desempeño con respecto a la deforestación es adecuado para cumplir con los
+                                            compromisos de la Compañía.<br><br>
+
+                                            El primer paso para rastrear proveedores indirectos (que no tienen un
+                                            vinculo
+                                            contractual con la Compañía) es señalar a los proveedores directos el
+                                            requisito de
+                                            proporcionar información sobre sus proveedores directos. Las acciones
+                                            específicas
+                                            recomendadas para aumentar el nivel de trazabilidad de la Compañía con
+                                            respecto a
+                                            los proveedores indirectos (por ejemplo, la granja final) incluyen:<br><br>
+
+                                            <b>1)</b> Requerir en la política de la empresa, el lenguaje del contrato y
+                                            la comunicación
+                                            formal que los proveedores directos (p. ej., empacadores de carne)
+                                            proporcionen el
+                                            polígono de proveedores indirectos (p. ej., granja final).<br>
+                                            <b>2)</b> Iniciar un proyecto piloto con los proveedores directos más
+                                            relevantes (p. ej.,
+                                            frigoríficos) para identificar la información del polígono de finca de los
+                                            proveedores indirectos (p. ej., finca final).<br>
+                                            <b>3)</b> Adaptar los sistemas internos para recopilar y consolidar
+                                            información de
+                                            proveedores directos (p. ej., frigoríficos) sobre proveedores indirectos (p.
+                                            ej.,
+                                            finca final).<br>
+                                            <b>4)</b> Contratar a un proveedor externo (ver el documento de Referencias
+                                            Técnicas) para
+                                            mapear y consolidar de los proveedores directos (por ejemplo, empacadores de
+                                            carne)
+                                            la información del polígono de la finca en los proveedores indirectos (por
+                                            ejemplo,
+                                            finca final).<br>
+                                            <b>5)</b> Utilizar herramientas gratuitas existentes (ver documento de
+                                            Referencias
+                                            Técnicas) que apoyen a la Empresa a trazar el polígono de fincas de
+                                            proveedores
+                                            indirectos (ej. finca final).<br>
+                                            <b>6)</b> Participar en iniciativas de colaboración que desarrollen
+                                            soluciones para abordar
+                                            el problema de la visibilidad de los proveedores indirectos (p. ej., finca
+                                            final).<br><br>
+
+                                            El objetivo final no tiene que ser la trazabilidad completa de su cadena de
+                                            suministro, ya que puede ser costosa y compleja; sino más bien, llegar al
+                                            nivel del
+                                            primer agregador de la materia prima (planta de beneficio o matadero,
+                                            empacadores de
+                                            carne). Esto podría conducir a un involucramiento con un conjunto de
+                                            proveedores
+                                            directos e indirectos teniendo en cuenta una evaluación de priorización de
+                                            riesgos.<br><br>
+
+                                            La Compañía debe iniciar este análisis para todos sus proveedores. Hacerlo
+                                            mejorará
+                                            la evaluación de riesgos y priorización para centrar esfuerzos. La Compañía
+                                            puede
+                                            comenzar con el anlisis de riesgo en sus operaciones propias y proveedores
+                                            más
+                                            relevantes, por ejemplo, aquellos con los mayores volúmenes de compra, la
+                                            mayor
+                                            frecuencia de compras o donde la Compañía tiene mayor influencia e ir
+                                            incrementando
+                                            progresivamente el numero de proveedores hasta cubrir la totalidad de la
+                                            cadena de
+                                            suministro
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="cal.calculation_eb == 'C'">
+                                        <td colspan="2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ullam
+                                            quisquam
+                                            voluptatibus dolorem obcaecati, repudiandae ad non ab numquam laudantium
+                                            atque nobis
+                                            corporis? Cumque laudantium ullam tempora amet, optio ex.
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit
+                                            perferendis
+                                            placeat
+                                            perspiciatis earum laudantium cum obcaecati mollitia quasi, laborum maiores
+                                            necessitatibus
+                                            nam illo totam quos accusamus architecto dolorum eaque?
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores reiciendis
+                                            laborum
+                                            nemo.
+                                            Fugit id molestiae iste delectus non repudiandae odio mollitia, ratione
+                                            deserunt
+                                            laboriosam.
+                                            Fuga voluptatem dignissimos sit libero vero?
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>PLANIFICAR INTERVENCIONES</td>
+                            <!-- <td>
+                                <div class="content-select">
+                                    <select formControlName="pi" name="">
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                    </select>
+                                    <i></i>
+                                </div>
+                            </td> -->
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <table class="table-secondary mb-0" id="select3">
+                                    <tr *ngIf="cal.calculation_pi == 'A'">
+                                        <td colspan="2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ullam
+                                            quisquam
+                                            voluptatibus dolorem obcaecati, repudiandae ad non ab numquam laudantium
+                                            atque nobis
+                                            corporis? Cumque laudantium ullam tempora amet, optio ex.
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit
+                                            perferendis
+                                            placeat
+                                            perspiciatis earum laudantium cum obcaecati mollitia quasi, laborum maiores
+                                            necessitatibus
+                                            nam illo totam quos accusamus architecto dolorum eaque?
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores reiciendis
+                                            laborum
+                                            nemo.
+                                            Fugit id molestiae iste delectus non repudiandae odio mollitia, ratione
+                                            deserunt
+                                            laboriosam.
+                                            Fuga voluptatem dignissimos sit libero vero?
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="cal.calculation_pi == 'B'">
+                                        <td colspan="2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ullam
+                                            quisquam
+                                            voluptatibus dolorem obcaecati, repudiandae ad non ab numquam laudantium
+                                            atque nobis
+                                            corporis? Cumque laudantium ullam tempora amet, optio ex.
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit
+                                            perferendis
+                                            placeat
+                                            perspiciatis earum laudantium cum obcaecati mollitia quasi, laborum maiores
+                                            necessitatibus
+                                            nam illo totam quos accusamus architecto dolorum eaque?
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores reiciendis
+                                            laborum
+                                            nemo.
+                                            Fugit id molestiae iste delectus non repudiandae odio mollitia, ratione
+                                            deserunt
+                                            laboriosam.
+                                            Fuga voluptatem dignissimos sit libero vero?
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="cal.calculation_pi == 'C'">
+                                        <td colspan="2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ullam
+                                            quisquam
+                                            voluptatibus dolorem obcaecati, repudiandae ad non ab numquam laudantium
+                                            atque nobis
+                                            corporis? Cumque laudantium ullam tempora amet, optio ex.
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit
+                                            perferendis
+                                            placeat
+                                            perspiciatis earum laudantium cum obcaecati mollitia quasi, laborum maiores
+                                            necessitatibus
+                                            nam illo totam quos accusamus architecto dolorum eaque?
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores reiciendis
+                                            laborum
+                                            nemo.
+                                            Fugit id molestiae iste delectus non repudiandae odio mollitia, ratione
+                                            deserunt
+                                            laboriosam.
+                                            Fuga voluptatem dignissimos sit libero vero?
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>MONITOREO Y REPORTE</td>
+                            <!-- <td>
+                                <div class="content-select">
+                                    <select formControlName="mr" name="">
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                    </select>
+                                    <i></i>
+                                </div>
+                            </td> -->
+                        </tr>
+
+                        <tr>
+                            <td colspan="3">
+                                <table class="table-secondary mb-0" id="select4">
+                                    <tr *ngIf="cal.calculation_mr == 'A'">
+                                        <td colspan="2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ullam
+                                            quisquam
+                                            voluptatibus dolorem obcaecati, repudiandae ad non ab numquam laudantium
+                                            atque nobis
+                                            corporis? Cumque laudantium ullam tempora amet, optio ex.
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit
+                                            perferendis
+                                            placeat
+                                            perspiciatis earum laudantium cum obcaecati mollitia quasi, laborum maiores
+                                            necessitatibus
+                                            nam illo totam quos accusamus architecto dolorum eaque?
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores reiciendis
+                                            laborum
+                                            nemo.
+                                            Fugit id molestiae iste delectus non repudiandae odio mollitia, ratione
+                                            deserunt
+                                            laboriosam.
+                                            Fuga voluptatem dignissimos sit libero vero?
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="cal.calculation_mr == 'B'">
+                                        <td colspan="2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ullam
+                                            quisquam
+                                            voluptatibus dolorem obcaecati, repudiandae ad non ab numquam laudantium
+                                            atque nobis
+                                            corporis? Cumque laudantium ullam tempora amet, optio ex.
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit
+                                            perferendis
+                                            placeat
+                                            perspiciatis earum laudantium cum obcaecati mollitia quasi, laborum maiores
+                                            necessitatibus
+                                            nam illo totam quos accusamus architecto dolorum eaque?
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores reiciendis
+                                            laborum
+                                            nemo.
+                                            Fugit id molestiae iste delectus non repudiandae odio mollitia, ratione
+                                            deserunt
+                                            laboriosam.
+                                            Fuga voluptatem dignissimos sit libero vero?
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="cal.calculation_mr == 'C'">
+                                        <td colspan="2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ullam
+                                            quisquam
+                                            voluptatibus dolorem obcaecati, repudiandae ad non ab numquam laudantium
+                                            atque nobis
+                                            corporis? Cumque laudantium ullam tempora amet, optio ex.
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit
+                                            perferendis
+                                            placeat
+                                            perspiciatis earum laudantium cum obcaecati mollitia quasi, laborum maiores
+                                            necessitatibus
+                                            nam illo totam quos accusamus architecto dolorum eaque?
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores reiciendis
+                                            laborum
+                                            nemo.
+                                            Fugit id molestiae iste delectus non repudiandae odio mollitia, ratione
+                                            deserunt
+                                            laboriosam.
+                                            Fuga voluptatem dignissimos sit libero vero?
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>MECANISMO DE QUEJAS Y RECLAMOS</td>
+                            <!-- <td>
+                                <div class="content-select">
+                                    <select formControlName="mqr" name="">
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                    </select>
+                                    <i></i>
+                                </div>
+                            </td> -->
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <table class="table-secondary mb-0" id="select5">
+                                    <tr *ngIf="cal.calculation_qr == 'A'">
+                                        <td colspan="2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ullam
+                                            quisquam
+                                            voluptatibus dolorem obcaecati, repudiandae ad non ab numquam laudantium
+                                            atque nobis
+                                            corporis? Cumque laudantium ullam tempora amet, optio ex.
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit
+                                            perferendis
+                                            placeat
+                                            perspiciatis earum laudantium cum obcaecati mollitia quasi, laborum maiores
+                                            necessitatibus
+                                            nam illo totam quos accusamus architecto dolorum eaque?
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores reiciendis
+                                            laborum
+                                            nemo.
+                                            Fugit id molestiae iste delectus non repudiandae odio mollitia, ratione
+                                            deserunt
+                                            laboriosam.
+                                            Fuga voluptatem dignissimos sit libero vero?
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="cal.calculation_qr == 'B'">
+                                        <td colspan="2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ullam
+                                            quisquam
+                                            voluptatibus dolorem obcaecati, repudiandae ad non ab numquam laudantium
+                                            atque nobis
+                                            corporis? Cumque laudantium ullam tempora amet, optio ex.
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit
+                                            perferendis
+                                            placeat
+                                            perspiciatis earum laudantium cum obcaecati mollitia quasi, laborum maiores
+                                            necessitatibus
+                                            nam illo totam quos accusamus architecto dolorum eaque?
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores reiciendis
+                                            laborum
+                                            nemo.
+                                            Fugit id molestiae iste delectus non repudiandae odio mollitia, ratione
+                                            deserunt
+                                            laboriosam.
+                                            Fuga voluptatem dignissimos sit libero vero?
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="cal.calculation_qr == 'C'">
+                                        <td colspan="2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ullam
+                                            quisquam
+                                            voluptatibus dolorem obcaecati, repudiandae ad non ab numquam laudantium
+                                            atque nobis
+                                            corporis? Cumque laudantium ullam tempora amet, optio ex.
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit
+                                            perferendis
+                                            placeat
+                                            perspiciatis earum laudantium cum obcaecati mollitia quasi, laborum maiores
+                                            necessitatibus
+                                            nam illo totam quos accusamus architecto dolorum eaque?
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores reiciendis
+                                            laborum
+                                            nemo.
+                                            Fugit id molestiae iste delectus non repudiandae odio mollitia, ratione
+                                            deserunt
+                                            laboriosam.
+                                            Fuga voluptatem dignissimos sit libero vero?
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-1">
+            </div>
+        </div>
+
+
+        <div class="col-md-12 text-center">
+            <div class="row">
+                <div class="col-1">
+
+                </div>
+
+                <div class="col-10" *ngFor="let cal of informacion">
+                    <div class="list-group">
+                        <a data-bs-toggle="modal" data-bs-target="#exampleModal1"
+                            class="list-group-item list-group-item-action list-group-item-success">
+                            <div>
+                                <H4>
+                                    Hoja de ruta
+                                </H4>
+                                <h5>
+                                    Si no sabes que hacer <b>Clic aquí</b>
+                                </h5>
+                            </div>
+
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel1">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body col-md-12 text-center">
+                                <iframe width=100% height="315" src="https://www.youtube.com/embed/ZgHQ0PCMRPE"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-1">
+
+                </div>
+            </div> <br>
+
+
+
+            <div>
+                <!-- <button type="button" (click)="downloadPDF()" class="btn btn-success">Descargar como PDF</button> -->
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" (click)="downloadPDF()"
+                    data-bs-target="#exampleModal">
+                    Descargar como PDF
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="alert alert-success" role="alert">
+                                Esta acción puede tomar varios segundos!
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div> <br><br>
+
+
+            <img src="../assets/footerPDF.png" height=60% width=60% alt="">
+
+
+
+        </div>
+
+
+    </form>
+
+
+</div>
+<app-menu></app-menu>

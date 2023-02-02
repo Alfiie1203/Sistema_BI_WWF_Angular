@@ -1,5 +1,7 @@
+import { compileDeclareClassMetadata } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { elementAt } from 'rxjs';
 
 @Component({
   selector: 'app-glosario',
@@ -310,9 +312,13 @@ export class GlosarioComponent implements OnInit {
     }
     else{
       localStorage.setItem("id_kobotoolbox",inputValue);
-      this.router.navigateByUrl("/resultados");
-
+      this.router.navigateByUrl("/hojaderuta");
     }   
+  }
+
+
+  public getInputValue2(){
+    window.open("/resultados");
   }
 
 }
